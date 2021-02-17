@@ -1,8 +1,13 @@
 'use strict';
 
 let correctAnswer = 0;
-let userName = prompt('What is your name?');
-alert('Welcome ' + userName + ' let start our guessing game');
+
+const firstName= function(){
+  let userName = prompt('What is your name?');
+  alert('Welcome ' + userName + ' let start our guessing game');
+};
+
+firstName();
 
 /*it's work just another way for the operator it is terrnary!(it's for me)
 let likePet = prompt('Does i like pet?yes/no or y/n');
@@ -145,9 +150,14 @@ for (let m = 0; m < arr.length; m++) {
 //favoriteColors();
 
 
+function whatIsMyScore(){
+  alert('ok ' + userName + ' you answered ' + correctAnswer + ' question correctly');
+
+}
+whatIsMyScore();
 
 
 
-alert('ok ' + userName + ' you answered ' + correctAnswer + ' question correctly');
+
 
 
