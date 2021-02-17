@@ -121,33 +121,34 @@ bachelorYears();
 
 
 //function favoriteColors(){
+const favoriteColors = function(){
 
-let arr = ['red', 'black', 'white'];
+  let arr = ['red', 'black', 'white'];
 
-favColor = prompt('what is my favorite colors ?').toLowerCase();
-for (let i = 0; i <= 5; i++) {
-  for (let y = 0; y < arr.length; y++) {
-    if (favColor !== arr[y]) {
-      alert('it is not one of my favorite color !');
-      favColor = prompt('what is my favorite colors ?');
-    }
-    else if (favColor === arr[y]) {
-      alert('yes it is one of my favorite color');
-      correctAnswer++;
+  favColor = prompt('what is my favorite colors ?').toLowerCase();
+  for (let i = 0; i <= 5; i++) {
+    for (let y = 0; y < arr.length; y++) {
+      if (favColor !== arr[y]) {
+        alert('it is not one of my favorite color !');
+        favColor = prompt('what is my favorite colors ?');
+      }
+      else if (favColor === arr[y]) {
+        alert('yes it is one of my favorite color');
+        correctAnswer++;
+        break;
+      }
       break;
     }
+
     break;
   }
 
-  break;
-}
 
-
-for (let m = 0; m < arr.length; m++) {
-  alert('the aswers was ' + arr[m]);
-}
-//}
-//favoriteColors();
+  for (let m = 0; m < arr.length; m++) {
+    alert('the answers was ' + arr[m]);
+  }
+};
+favoriteColors();
 
 
 function whatIsMyScore(){
