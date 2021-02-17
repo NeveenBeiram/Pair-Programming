@@ -120,7 +120,7 @@ function bachelorYears(){
 bachelorYears();
 
 
-//function favoriteColors(){
+
 const favoriteColors = function(){
 
   let arr = ['red', 'black', 'white'];
