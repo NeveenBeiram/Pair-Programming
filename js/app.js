@@ -1,9 +1,9 @@
 'use strict';
 
 let correctAnswer = 0;
-
+let userName;
 const firstName= function(){
-  let userName = prompt('What is your name?');
+  userName = prompt('What is your name?');
   alert('Welcome ' + userName + ' let start our guessing game');
 };
 
