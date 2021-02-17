@@ -122,31 +122,68 @@ bachelorYears();
 
 
 const favoriteColors = function(){
+  let attempt2=5;
 
-  let arr = ['red', 'black', 'white'];
+  let arr=['red','black','white'];
+
 
   favColor = prompt('what is my favorite colors ?').toLowerCase();
-  for (let i = 0; i <= 5; i++) {
-    for (let y = 0; y < arr.length; y++) {
-      if (favColor !== arr[y]) {
-        alert('it is not one of my favorite color !');
-        favColor = prompt('what is my favorite colors ?');
-      }
-      else if (favColor === arr[y]) {
-        alert('yes it is one of my favorite color');
+
+  outerloop1 :for (let z = 0; z <5; z++) {
+
+    for(let n=0;n<arr.length;n++){
+
+      if (favColor === arr[n]) {
+
         correctAnswer++;
+
+        alert('yes it is one of my favorite colors');
+
+        break outerloop1;
+      }
+
+      else if (favColor !== arr[n]) {
+        alert('it is not one of my favorite color !');
+        attempt2 --;
+        favColor = prompt('what is my favorite colors ?').toLowerCase();
+
+      }
+
+      if (attempt2 === 0) {
+        alert('you do not have extra attempt');
         break;
       }
       break;
     }
-
-    break;
   }
 
 
-  for (let m = 0; m < arr.length; m++) {
-    alert('the answers was ' + arr[m]);
-  }
+  for (let m=0;m<arr.length;m++){
+    alert('the aswers was ' + arr[m]);}
+  // let arr = ['red', 'black', 'white'];
+
+  // favColor = prompt('what is my favorite colors ?').toLowerCase();
+  // for (let i = 0; i <= 5; i++) {
+  //   for (let y = 0; y < arr.length; y++) {
+  //     if (favColor !== arr[y]) {
+  //       alert('it is not one of my favorite color !');
+  //       favColor = prompt('what is my favorite colors ?');
+  //     }
+  //     else if (favColor === arr[y]) {
+  //       alert('yes it is one of my favorite color');
+  //       correctAnswer++;
+  //       break;
+  //     }
+  //     break;
+  //   }
+
+  //   break;
+  // }
+
+
+  // for (let m = 0; m < arr.length; m++) {
+  //   alert('the answers was ' + arr[m]);
+  // }
 };
 favoriteColors();
 
