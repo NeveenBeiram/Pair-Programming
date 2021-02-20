@@ -51,6 +51,7 @@ border-radius:5px;
 footer{
 text-align: center;
 text-decoration-line: underline;
+border-style:groove;
 }
 
 main ol li{
